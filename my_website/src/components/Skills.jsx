@@ -1,27 +1,37 @@
-const Skills = () => {
-    return ( 
-        <div className="text-blue-200 text-base mx-auto ml-5 pt-3">
-            <p className="text-2xl">Skills-Tools</p>
-            <div className="border border-blue-200">
-                <ul className="text-white pl-2">            {/**implement the icons for each list entry */}
-                    <li>Html</li>
-                    <li>CSS</li>                            {/**need to implement links for each list entry */}
-                    <li>JavaScript</li>                     {/**display clicked link in a div in the center of the viewport */}
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>TypeScript</li>
-                    <li>Node.js</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Bash</li>
-                    <li>Git</li>
-                    <li>React</li>
-                </ul>
+import {
+  HTML,
+  JAVA,
+  JS,
+  PYTHON,
+  GIT,
+  DB,
+  CSS,
+  NODEJS,
+  REACT,
+  BASH,
+} from "../utils/icons";
 
-            </div>
-        </div>
-     );
-}
- 
+const Skills = () => {
+  return (
+    <div className="text-green-200 mx-auto ml-5 pt-3">
+      <p className="text-3xl">Skills-Tools</p>
+      <div className="border border-green-200 text-white text-xl pl-1">
+        <ul>
+          <li>{HTML} Html</li>
+          <li>{CSS} CSS</li>
+          <li>{JS} JavaScript</li>
+          <li>{JAVA} Java</li>
+          <li>{PYTHON} Python</li>
+          <li>{NODEJS} Node.js</li>
+          <li>{DB} MySQL</li>
+          <li>{DB} MongoDB</li>
+          <li>{BASH} Bash</li>
+          <li>{GIT} Git</li>
+          <li>{REACT} React</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 export default Skills;

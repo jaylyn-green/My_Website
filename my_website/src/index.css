@@ -7,3 +7,8 @@
     padding: 0;
 }
 
+
+li:hover{
+    background-color: hsla(123, 100%, 80%, 0.37);
+
+}
