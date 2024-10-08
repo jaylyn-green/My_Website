@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
-  const [active, setActive] = useState(1); //implement logic to display clicked project in viewport
+  /*const [active, setActive] = useState(1);        implement logic to display clicked project in viewport
 
   const display = () => {
     switch (active) {
@@ -15,7 +15,7 @@ function App() {
       default:
         return;
     }
-  };
+  };*/
 
   return (
     <div className="bg-black h-screen flex flex-col items-start">
