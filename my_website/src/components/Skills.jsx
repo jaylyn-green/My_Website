@@ -13,7 +13,7 @@ import {
 
 const Skills = () => {
   return (
-    <div className="text-green-200 mx-auto ml-5 pt-3">
+    <div className="text-green-200 mx-auto ml-7 pt-3">
       <p className="text-3xl">Skills-Tools</p>
       <div className="border border-green-200 text-white text-xl pl-1">
         <ul>
