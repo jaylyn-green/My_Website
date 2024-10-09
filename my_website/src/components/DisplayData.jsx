@@ -1,6 +1,6 @@
-const Display = ({ project }) => {
+const DisplayData = ({ project }) => {
   return (
-    <div>
+    <div className="border h-4/5 mx-5 px-4 py-4 ">
       <p className="text-white">
         {project ? project : "Select a project to view details"}
       </p>
@@ -8,4 +8,4 @@ const Display = ({ project }) => {
   );
 };
 
-export default Display;
+export default DisplayData;
