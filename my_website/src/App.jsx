@@ -10,7 +10,7 @@ function App() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="bg-black h-screen grid grid-cols-4 gap-4 p-4">
+    <div className="bg-zinc-800 h-screen grid grid-cols-4 gap-4 p-4">
       <div className="col-span-1 space-y-4">
         <Home setActiveProject={setActiveProject} setSelected={setSelected} />
         <Projects
