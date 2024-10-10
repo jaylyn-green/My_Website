@@ -11,7 +11,7 @@ const Home = ({ setSelected, setActiveProject }) => {
       <p className="text-3xl">Home</p>
       <div className="text-white border border-amber-400 p-2 ">
         <p id="home-text">
-          Hello, I am Jaylyn Green. I have a passion for web development...
+          Hello, I am Jaylyn Green. I have a passion for web development!
         </p>
       </div>
     </div>

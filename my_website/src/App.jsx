@@ -10,17 +10,17 @@ function App() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="bg-zinc-800 h-screen grid grid-cols-4 gap-4 p-4">
+    <div className="bg-gray-900 h-screen grid grid-cols-4 gap-4 p-4">
       <div className="col-span-1 space-y-4">
-        <Home setActiveProject={setActiveProject} setSelected={setSelected} />
+        <Home setActiveProject={setActiveProject} setSelected={setSelected} />                {/**could i make the items bigger. they seem to not take up enough space */}
         <Projects
           setActiveProject={setActiveProject}
           selected={selected}
           setSelected={setSelected}
         />
-        <Skills />
+        <Skills />    
       </div>
-      <div className="col-span-3">
+      <div className="col-span-3 ">
         <DisplayData project={activeProject} />
       </div>
     </div>
