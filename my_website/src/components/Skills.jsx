@@ -9,7 +9,7 @@ import {
   NODEJS,
   REACT,
   BASH,
-} from "../utils/icons";
+} from "../../utils/icons";
 
 const Skills = () => {
   return (
