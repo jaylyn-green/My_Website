@@ -4,7 +4,7 @@ const DisplayData = ({ activeProject }) => {
   const projectDetails = projectData[activeProject] || {};
 
   return (
-    <div className="border h-4/5 mx-5 mt-12 px-4 py-4 text-white text-2xl overflow-y-auto">
+    <div className="border h-4/5 mx-5 mt-12 px-4 py-4 text-white text-2xl overflow-y-auto custom-scroll">
       {activeProject ? (
         <div>
           <h2 className="text-3xl mb-3">{activeProject}</h2>
