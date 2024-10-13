@@ -13,13 +13,13 @@ const Projects = ({ setActiveProject, selected, setSelected }) => {
             className="cursor-pointer mb-3"
             style={{
               backgroundColor:
-                selected === "Fitness Tracker"
+                selected === "FitnessTracker"
                   ? "hsla(120, 100%, 75%, 0.5)"
                   : "",
             }}
-            onClick={() => handleClick("Fitness Tracker")}
+            onClick={() => handleClick("FitnessTracker")}
           >
-            Fitness Tracker
+            FitnessTracker
           </li>
           <li
             className="cursor-pointer mb-3"
