@@ -10,7 +10,7 @@ const Projects = ({ setActiveProject, selected, setSelected }) => {
       <div className="border border-green-200 text-white text-2xl p-2">
         <ul>
           <li
-            className="cursor-pointer mb-3"
+            className="cursor-pointer"
             style={{
               backgroundColor:
                 selected === "FitnessTracker"
@@ -22,7 +22,7 @@ const Projects = ({ setActiveProject, selected, setSelected }) => {
             FitnessTracker
           </li>
           <li
-            className="cursor-pointer mb-3"
+            className="cursor-pointer"
             style={{
               backgroundColor:
                 selected === "CityUpdate" ? "hsla(120, 100%, 75%, 0.5)" : "",
@@ -33,7 +33,7 @@ const Projects = ({ setActiveProject, selected, setSelected }) => {
           </li>
 
           <li
-            className="cursor-pointer mb-3"
+            className="cursor-pointer"
             style={{
               backgroundColor:
                 selected === "ChatApp" ? "hsla(120, 100%, 75%, 0.5)" : "",
