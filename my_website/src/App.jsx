@@ -21,7 +21,7 @@ function App() {
         <Skills />    
       </div>
       <div className="col-span-3 ">
-        <DisplayData project={activeProject} />
+        <DisplayData activeProject={activeProject} />
       </div>
     </div>
   );

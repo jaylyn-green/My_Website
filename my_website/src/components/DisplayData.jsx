@@ -1,9 +1,9 @@
-const DisplayData = ({ project }) => {
+const DisplayData = ({ activeProject }) => {
   return (
     <div className="border h-4/5 mx-5 mt-12 px-4 py-4 ">
       <p className="text-white text-2xl">
-        {project ? (
-          project
+        {activeProject ? (
+          activeProject
         ) : (
           <text>
             I am Jaylyn Green, an aspiring web developer. I graduated from
@@ -21,7 +21,7 @@ const DisplayData = ({ project }) => {
             <br />
             <br />
             Here is a link to my{" "}
-            <a className="text-orange-500" href="">
+            <a className="text-orange-500" href="">       {/**put resume pdf link here*/}
               resume
             </a>{" "}
             and{" "}
@@ -31,7 +31,7 @@ const DisplayData = ({ project }) => {
             >
               LinkedIn.
             </a>{" "}
-            {/**put resume pdf link here*/}
+            
           </text>
         )}
       </p>
