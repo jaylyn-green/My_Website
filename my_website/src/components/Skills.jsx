@@ -13,9 +13,9 @@ import {
 
 const Skills = () => {
   return (
-    <div className="text-green-200 mx-auto ml-7 pt-3">
+    <div className="text-green-200 mx-auto ml-7 pt-3 h-72">
       <p className="text-3xl">Skills & Tools</p>
-      <div className="border border-green-200 text-white text-xl pl-1">
+      <div className="border border-green-200 text-white text-xl pl-1 h-72 overflow-y-auto custom-scroll">
         <ul>
           <li>{HTML} Html</li>
           <li>{CSS} CSS</li>
