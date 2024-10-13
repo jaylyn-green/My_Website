@@ -3,7 +3,7 @@ import { HTML, CSS, REACT, NODEJS, DB } from "./icons";
 
 export const projectData = {
     FitnessTracker: {
-        description: "A web application that helps users track their fitness activities and goals.",
+        description: "A web application that helps users track their fitness activities and goals. This application allows the user to input their run times, distance, and weight training exercises and is able to set goals based on the data the provide. This application uses Html, CSS, JavaScript, React, Node.js and MongoDb.",
         images: [], // put images later
         icons: [HTML, CSS, REACT, NODEJS, DB],
         link: "https://github.com/jaylyn-green/fitness_tracker_fullstack"
@@ -16,7 +16,7 @@ export const projectData = {
     },
     ChatApp: {
         description: "A chat application that allows users to communicate in real-time. Uses backend technologies such as Node.js and socket.io.",
-        images: [],
+        images: [], //put images later
         icons: [HTML, CSS, REACT, NODEJS, DB],
         link: "https://github.com/jaylyn-green/ChatApp"
     },
