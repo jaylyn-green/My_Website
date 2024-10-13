@@ -5,7 +5,7 @@ const Home = ({ setSelected, setActiveProject }) => {
   };
   return (
     <div
-      className="text-amber-400 ml-7 pt-3 mx-auto"
+      className="text-amber-400 ml-7 pt-3 mx-auto cursor-pointer"
       onClick={() => handleClick()}
     >
       <p className="text-3xl">Home</p>
