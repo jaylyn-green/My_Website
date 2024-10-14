@@ -1,6 +1,6 @@
 import { projectData } from "../../utils/projectData";
 
-const DisplayData = ({ activeProject }) => {
+const Window = ({ activeProject }) => {
   const projectDetails = projectData[activeProject] || {};
 
   return (
@@ -77,4 +77,4 @@ const DisplayData = ({ activeProject }) => {
   );
 };
 
-export default DisplayData;
+export default Window;

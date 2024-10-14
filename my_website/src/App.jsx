@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import DisplayData from "./components/DisplayData";
+import Window from "./components/Window";
 import Footer from "./components/Footer";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Skills />
       </div>
       <div className="col-span-3 ">
-        <DisplayData activeProject={activeProject} />
+        <Window activeProject={activeProject} />
       </div>
       <Footer />
     </div>
