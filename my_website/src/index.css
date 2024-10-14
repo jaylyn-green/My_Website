@@ -10,8 +10,11 @@
 
 li:hover{
     background-color: hsla(123, 100%, 80%, 0.37);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
 
 }
 #home-text:hover{
-    background-color: hsla(39, 62%, 43%);
+    border-color: hsla(39, 62%, 43%);
 }
