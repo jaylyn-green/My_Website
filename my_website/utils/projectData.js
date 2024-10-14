@@ -15,7 +15,7 @@ export const projectData = {
         link: "https://github.com/jaylyn-green/CityUpdate"
     },
     ChatApp: {
-        description: "A chat application that allows users to communicate in real-time. Uses backend technologies such as Node.js and socket.io.",
+        description: "A chat application that allows users to communicate in real-time. Uses backend technologies such as Node.js and socket.io. Also uses various other JavaScript frameworks, libraries, and toolkits to assist in authentication. ",
         images: [], //put images later
         icons: [HTML, CSS, REACT, NODEJS, DB],
         link: "https://github.com/jaylyn-green/ChatApp"
