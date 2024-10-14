@@ -10,7 +10,7 @@ const Window = ({ activeProject }) => {
           <h2 className="text-3xl mb-3">{activeProject}</h2>
           <p className="mx-7">
             {projectDetails.description} Here's the{" "}
-            <a className="text-green-400 underline" href={projectDetails.link}>
+            <a className="text-green-400 underline" href={projectDetails.link} target="_blank">
               Github
             </a>{" "}
             for the code.
@@ -62,7 +62,7 @@ const Window = ({ activeProject }) => {
           <br />
           <br />
           Here is a link to my{" "}
-          <a className="text-orange-500 underline" href="">
+          <a className="text-orange-500 underline" href="" target="_blank">
             {" "}
             {/**resume.pdf link here */}
             resume
@@ -71,6 +71,7 @@ const Window = ({ activeProject }) => {
           <a
             className="text-purple-400 underline"
             href="https://www.linkedin.com/in/jaylyn-green-0b4086242/"
+            target="_blank"
           >
             LinkedIn.
           </a>{" "}
