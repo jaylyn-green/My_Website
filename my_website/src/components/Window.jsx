@@ -38,7 +38,7 @@ const Window = ({ activeProject }) => {
           I am <span className="text-green-400">Jaylyn Green</span>, an aspiring web developer. I graduated from Georgia
           Southwestern University with a bachelor's in <span className="text-orange-500">IT</span>. I have built several
           projects showcasing my work and if you would like to check them out,
-          take look at the projects tab. Explore the section on the left to
+          take look at the <span className="text-green-400">projects</span> tab. Explore the section on the left to
           learn about my <span className="text-purple-400">skills</span> and the{" "}
           <span className="text-purple-400">tools</span> that I use You can also
           view my repositories in this{" "}
@@ -51,7 +51,7 @@ const Window = ({ activeProject }) => {
           link.
           <br />
           <br />
-          Although I am more proficient in{" "}
+          Although I have more experience in{" "}
           <span className="text-orange-500">frontend</span> development, I also
           enjoy building <span className="text-purple-400">backend</span>{" "}
           application and tinkering with{" "}
