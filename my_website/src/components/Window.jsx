@@ -10,7 +10,7 @@ const Window = ({ activeProject }) => {
           <h2 className="text-3xl mb-3">{activeProject}</h2>
           <p className="mx-7">
             {projectDetails.description} Here's the{" "}
-            <a className="text-green-400" href={projectDetails.link}>
+            <a className="text-green-400 underline" href={projectDetails.link}>
               Github
             </a>{" "}
             for the code.
