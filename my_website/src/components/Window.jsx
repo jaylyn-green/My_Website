@@ -62,9 +62,8 @@ const Window = ({ activeProject }) => {
           <br />
           <br />
           Here is a link to my{" "}
-          <a className="text-orange-500 underline" href="" target="_blank">
+          <a className="text-orange-500 underline" href="https://drive.google.com/file/d/17PRbEObOIrWKousTi9ffBggD9Vc7hLl8/view?usp=sharing" target="_blank">
             {" "}
-            {/**resume.pdf link here */}
             resume
           </a>{" "}
           and{" "}
