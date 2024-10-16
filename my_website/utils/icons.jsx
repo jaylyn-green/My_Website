@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
@@ -23,3 +23,4 @@ export const REACT = <FontAwesomeIcon icon={faReact} />
 export const BASH = <FontAwesomeIcon icon={faTerminal} />
 export const StackOf = <FontAwesomeIcon icon={faStackOverflow} />
 export const Github = <FontAwesomeIcon icon={faGithub} />
+export const Bootstrap = <FontAwesomeIcon icon= {faBootstrap} />

@@ -11,7 +11,9 @@ import {
   BASH,
   StackOf,
   Github,
+  Bootstrap,
 } from "../../utils/icons";
+import { c_sharp, tailwind_svg } from "../../utils/svg";
 
 const Skills = () => {
   return (
@@ -32,6 +34,9 @@ const Skills = () => {
           <li>{REACT} React</li>
           <li>{GIT} Git operations</li>
           <li>{StackOf} StackOverflow</li>
+          <li>{Bootstrap} Boostrap</li>
+          <li>{tailwind_svg} Tailwind</li>
+          <li>{c_sharp} C#</li>
         </ul>
       </div>
     </div>
