@@ -13,7 +13,7 @@ import {
   Github,
   Bootstrap,
 } from "../../utils/icons";
-import { c_sharp_svg, tailwind_svg } from "../../utils/svg";
+import { c_sharp_svg, tailwind_svg, mongodb_svg } from "../../utils/svg";
 
 const Skills = () => {
   return (
@@ -28,7 +28,7 @@ const Skills = () => {
           <li>{PYTHON} Python</li>
           <li>{NODEJS} Node.js</li>
           <li>{DB} MySQL</li>
-          <li>{DB} MongoDB</li>
+          <li>{mongodb_svg} MongoDB</li>
           <li>{BASH} Bash</li>
           <li>{Github} Github</li>
           <li>{REACT} React</li>
