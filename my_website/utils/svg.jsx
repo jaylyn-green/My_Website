@@ -32,7 +32,7 @@ export const c_sharp_svg = (
   </svg>
 );
 
-export const mongodb_svg = (
+export const mongodb_svg = (        //spacing for this svg is weird
   <svg
     xmlns="http://www.w3.org/2000/svg"
     style={{ display: "inline", height: "23px", width: "22.5px"}}
