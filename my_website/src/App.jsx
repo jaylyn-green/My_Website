@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="bg-gray-900 h-screen grid grid-cols-4 overflow-hidden">
       <div className="col-span-1 space-y-4 ">
-        <Home setActiveProject={setActiveProject} setSelected={setSelected} />
+        <Home setActiveProject={setActiveProject} setSelected={setSelected} />        {/**should've used some state management */}
         <Projects
           setActiveProject={setActiveProject}
           selected={selected}

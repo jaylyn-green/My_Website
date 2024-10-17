@@ -10,7 +10,11 @@ const Window = ({ activeProject }) => {
           <h2 className="text-3xl mb-3">{activeProject}</h2>
           <p className="mx-7">
             {projectDetails.description} Here's the{" "}
-            <a className="text-green-400 underline" href={projectDetails.link} target="_blank">
+            <a
+              className="text-green-400 underline"
+              href={projectDetails.link}
+              target="_blank"
+            >
               Github
             </a>{" "}
             for the code.
@@ -62,7 +66,11 @@ const Window = ({ activeProject }) => {
           <br />
           <br />
           Here is a link to my{" "}
-          <a className="text-orange-500 underline" href="https://drive.google.com/file/d/17PRbEObOIrWKousTi9ffBggD9Vc7hLl8/view?usp=sharing" target="_blank">
+          <a
+            className="text-orange-500 underline"
+            href="https://drive.google.com/file/d/17PRbEObOIrWKousTi9ffBggD9Vc7hLl8/view?usp=sharing"
+            target="_blank"               /**opens a new tab when link is clicked */
+          >
             {" "}
             resum&eacute;
           </a>{" "}
