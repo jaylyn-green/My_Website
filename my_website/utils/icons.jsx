@@ -24,3 +24,6 @@ export const BASH = <FontAwesomeIcon icon={faTerminal} />
 export const StackOf = <FontAwesomeIcon icon={faStackOverflow} />
 export const Github = <FontAwesomeIcon icon={faGithub} />
 export const Bootstrap = <FontAwesomeIcon icon= {faBootstrap} />
+
+
+  

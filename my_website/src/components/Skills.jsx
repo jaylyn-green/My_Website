@@ -13,7 +13,7 @@ import {
   Github,
   Bootstrap,
 } from "../../utils/icons";
-import { c_sharp, tailwind_svg } from "../../utils/svg";
+import { c_sharp_svg, tailwind_svg } from "../../utils/svg";
 
 const Skills = () => {
   return (
@@ -36,7 +36,7 @@ const Skills = () => {
           <li>{StackOf} StackOverflow</li>
           <li>{Bootstrap} Boostrap</li>
           <li>{tailwind_svg} Tailwind</li>
-          <li>{c_sharp} C#</li>
+          <li>{c_sharp_svg} C#</li>
         </ul>
       </div>
     </div>
