@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+:root {
+  --color-green: #26ee02;
+  --color-blue: #008cff;
+  --color-orange: #d09100;
+  --hover: hsl(205, 56%, 22%);
+}
+
+html {
+  font-family: "VT323", monospace;
+  background-color: #0d1117;
+  color: white;
+  display: flex;
+  font-size: larger;
+}
+
+header {
+  border: 1px solid white;
+  padding: 0.5rem;
+  max-width: 400px;
+
+  span {
+    color: var(--color-green);
+  }
+}
+
+#projects-container {
+  border: 1px solid;
+  display: flex;
+  height: 300px;
+
+  ul {
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    li {
+      padding-left: 12px;
+    }
+    :hover {
+      background-color: var(--hover);
+    }
+  }
+}
+
+#skills-container {
+  border: 1px solid;
+  display: flex;
+  max-height: 300px;
+  overflow: auto;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    li {
+      padding-left: 12px;
+    }
+    :hover {
+      background-color: var(--hover);
+    }
+  }
+}
+#display {
+  border: 1px solid;
+  width: 500px;
+  height: 500px;
+  max-height: 500px;
+}
