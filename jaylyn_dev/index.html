@@ -7,40 +7,61 @@
 </head>
 
 <body>
-    <span id="home">Home</span> <!--Make the span change color on click with each frame-->
-    <header class="container selected" id="home-container">
-        Hello, I am <span style="margin:0 0.5rem;">Jaylyn Green</span> and I have a passion for web
-        development
-    </header>
-    <span id="projects">Projects</span>
-    <div class="container" id="projects-container">
-        <ul>
-            <li>FitnessTracker</li>
-            <li>CityUpdate</li>
-            <li>ChatApp</li>
-        </ul>
-    </div>
-    <span>Skills/Tools</span>
-    <div class="container" id="skills-container">
-        <ul>
-            <li>Java</li>
-            <li>C#</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>Github Actions</li>
-            <li>Node.JS</li>
-            <li>React</li>
-            <li>MySQL</li>
-            <li>TypeScript</li>
-            <li>Linux</li>
-            <li>Bash</li>
-        </ul>
-    </div>
-    <div class='container' id="display">
-        
+    <div class="main-container">
+        <div class="left-content">
+            <header class="home-container selected">
+                <p id="home">Home</p>
+                <!--Figure out spacing isssue for the p element. Make is fit on border instead of inside-->
+                <!--Swap "selected" whenever another container is clicked-->
+                <div>Hello, I am <span id="name" style="margin:0 0.5rem;">Jaylyn Green</span> and I have a passion for
+                    web
+                    development</div>
+            </header>
+            <div class="exp-container">
+                <p>Experience</p>
+                <div>
+                    <ul>
+                        <li>TA @ Georgia Southwestrn University</li>
+                        <li>Freelance Data Annotater</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="proj-container selected" id="projects-container">
+                <p>Projects</p>
+                <div>
+                <ul>
+                    <li>FitnessTracker</li>
+                    <li>CityUpdate</li>
+                    <li>ChatApp</li>
+                </ul>
+                </div>
+            </div>
+            <div class="skills-container selected" id="skills-container">
+                <p>Skills/Tools</p>
+                <div>
+                <ul>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li> <!--Get some svg's for each list entry-->
+                    <li>JavaScript</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Git</li>
+                    <li>Github Actions</li>
+                    <li>Node.JS</li>
+                    <li>React</li>
+                    <li>MySQL</li>
+                    <li>TypeScript</li>
+                    <li>Linux</li>
+                    <li>Bash</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class='container' id="display">
+            <!--Figure out how to change display on li click-->
+            <!--Initially display info about me-->
+        </div>
     </div>
 </body>
 
