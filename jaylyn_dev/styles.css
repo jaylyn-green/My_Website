@@ -159,3 +159,8 @@ body {
 ::-webkit-scrollbar-track{
   background: #222;
 }
+.svg{
+  height: 1rem;
+  width: 1rem;
+  padding-right: .19rem ;
+}
