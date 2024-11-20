@@ -6,16 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>About Me</h2>
             <p>Detailed information about yourself...</p>
         `,
-        experience: `
-            <h2>Experience Details</h2>
-            <div>
-                <h3>Teacher's Assistant @ GSW</h3>
-                <p>Description of your role and responsibilities...</p>
-                
-                <h3>Freelance Data Annotater @ DataAnnotation</h3>
-                <p>Description of your work and achievements...</p>
+        experience: {
+            "Teacher's assistant": `
+            <div class="exp-description">    
+                <h3>Teacher's <span style=color:var(--color-purple)>Assitant</span></h3>
+                <p>August <span style=color:var(--color-green)>2023</span> - December 2023</p>
+                <ul>
+                    <li>Teaching <span style=color:var(--color-blue)>assitant</span> for entry level programming classes</li>
+                    <li>Helped fellow students understand the basics of <span style=color:var(--color-green)>programming</span> principles</li>
+                    <li><span style=color:var(--color-orange)>Tutored</span> those who needed an extra push</li>
+                </ul>
             </div>
-        `,
+            `,
+            "Freelance Data Annotater": `
+            <div class = "exp-description">    
+                <h3>Freelance Data <span style=color:var(--color-green)>Annotater</span></h3>
+                <p>May <span style=color:var(--color-orange)>2024</span> - <span style=color:var(--color-blue)>Present</span></p>
+                <ul>
+                <li>Labeled and <span style=color:var(--color-purple)>annotated</span> large datasets for machine learning and AI training.</li>
+                <li>Utilized programming languages (Python, <span style=color:var(--color-blue)>JavaScript</span>, HTML, C++, C#, SQL) to solve <span style=color:var(--color-purple)>coding</span> problems and complete projects.</li>
+                <li>Worked on various projects involving data <span style=color:var(--color-green)>collection</span>, AI model training, and data categorization.</li>
+                <li>Maintained high accuracy and attention to <span style=color:var(--color-green)>detail</span>, ensuring the quality of annotated data.</li>
+                <li>Successfully managed <span style=color:var(--color-purple)>multiple</span> projects with varying deadlines in a remote, <span style=color:var(--color-orange)>flexible</span> work environment.</li>
+            </div>
+            `
+        },
         projects: {
             'FitnessTracker': `
             <div class="project-desc">    
@@ -298,9 +313,15 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSelectedSection(this);
     });
 
-    document.querySelector('.exp-container').addEventListener('click', function () {
-        displayContainer.innerHTML = content.experience;
-        updateSelectedSection(this);
+    const experienceItems = document.querySelectorAll('.exp-container li');
+    experienceItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const experienceName = this.textContent.trim();
+            if (content.experience[experienceName]) {
+                displayContainer.innerHTML = content.experience[experienceName];
+            }
+            updateSelectedSection(document.querySelector('.exp-container'));
+        });
     });
 
     const projectItems = document.querySelectorAll('.proj-container li');
@@ -317,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const skillItems = document.querySelectorAll('.skills-container li');
     skillItems.forEach(item => {
         item.addEventListener('click', function () {
-            const skillName = this.textContent;
+            const skillName = this.textContent.trim();
             if (content.skills[skillName]) {
                 displayContainer.innerHTML = content.skills[skillName];
             }
