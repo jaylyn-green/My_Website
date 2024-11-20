@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 
 :root {
-  --color-green: #26ee02;
+  --color-green: #6ad857;
   --color-blue: #008cff;
   --color-orange: #d09100;
+  --color-purple: #b067ff;
   --hover: hsl(205, 56%, 22%);
   --selected: hsl(200, 100%, 70%);
   --primary-color: #0d1117;
@@ -163,4 +164,12 @@ body {
   height: 1rem;
   width: 1rem;
   padding-right: 0.19rem;
+}
+h2{
+  padding-left: 2rem;
+}
+.skill-details{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
 }
