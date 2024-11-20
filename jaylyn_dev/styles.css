@@ -17,6 +17,9 @@ html {
   display: flex;
   font-size: 19px;
   overflow: hidden;
+  li {
+    cursor: pointer;
+  }
 }
 
 body {
@@ -49,6 +52,7 @@ body {
   div {
     border: 1px solid;
     padding: 0.5rem;
+    cursor: pointer;
   }
   span {
     color: var(--color-green);
@@ -165,11 +169,38 @@ body {
   width: 1rem;
   padding-right: 0.19rem;
 }
-h2{
+h2,
+h3 {
   padding-left: 2rem;
+  margin-bottom: 0;
 }
-.skill-details{
+.skill-details {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
+}
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  p {
+    padding: 0 2rem 0.4rem;
+    margin: 0;
+  }
+  ul {
+    margin: 0 4rem;
+    padding: 0;
+  }
+}
+button {
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid;
+  transition: 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin: 0.5rem 2rem 2rem;
+}
+button:hover {
+  background-color: var(--hover);
 }

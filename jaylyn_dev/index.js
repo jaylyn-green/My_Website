@@ -18,22 +18,53 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         projects: {
             'FitnessTracker': `
-                <h2>FitnessTracker</h2>
-                <p>Description of FitnessTracker project...</p>
+            <div class="project-desc">    
+                    <h2 style="color:var(--color-green)">FitnessTracker</h2>
+                    <a target="_blank" href="https://github.com/jaylyn-green/fitness_tracker_fullstack"><button type="button">Github</button></a>
+                <p>
+                    <span style = "color:var(--color-orange)">Developed</span> a full-stack fitness tracking application for runners using the <span style="color: var(--color-blue);">MERN</span> stack (MongoDB, Express, ReactJS, Node.js). Designed a secure back-end API with Node.js and <span style="colorLvar(--color-blue)">Express</span> to manage running data, integrating it with a MongoDB <span style="color: var(--color-orange);">database</span>. Built an <span style="color:var(--color-blue)">interactive</span> front-end user interface with ReactJS, enabling users to log and <span style="color: var(--color-green);">track</span> runs effortlessly. Implemented key features such as adding, managing, and analyzing metrics like <span style="color: var(--color-purple);">distance</span>, time, and pace. Ensured seamless integration between front-end and back-end components to deliver a smooth and intuitive <span style="color: var(--color-blue);">experience</span>.
+                <p>
+
                 <h3>Technologies Used:</h3>
                 <ul>
-                    <li>Technology 1</li>
-                    <li>Technology 2</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>Node.js</li>
                 </ul>
+            </div>
             `,
             'CityUpdate': `
-                <h2>CityUpdate</h2>
-                <p>Description of CityUpdate project...</p>
-            `,
+            <div class="project-desc">    
+            <h2 style="color:var(--color-blue)">CityUpdate</h2>
+             <a target="_blank" href="https://github.com/jaylyn-green/CityUpdate"><button type="button">Github</button></a>
+                <p>
+                    The <span style="color: var(--color-blue);">City Infrastructure Tracker</span> is a web application that allows users to manage and visualize city projects, such as <span style="color: var(--color-orange);">roadwork</span> or <span style="color: var(--color-green);">construction</span>, on an interactive <span style="color: var(--color-purple);">Google Map</span>. Users can register projects by submitting details like <span style="color: var(--color-purple);">type</span>, location, status, and impact through a form, with the data stored in a backend <span style="color: var(--color-orange);">database</span>. The map dynamically displays <span style="color: var(--color-blue);">markers</span> for each project, which users can click to view detailed information or delete to remove the project from both the map and the backend. The application ensures <span style="color: var(--color-green);">real-time updates</span> to markers while maintaining a seamless map interaction experience. Built with <span style="color: var(--color-purple);">React</span>, <span style="color: var(--color-blue);">Google Maps API</span>, and a RESTful backend, it provides an efficient way to track and manage infrastructure projects.
+                </p>
+
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+`,
             'ChatApp': `
-                <h2>ChatApp</h2>
-                <p>Description of ChatApp project...</p>
-            `
+            <div class="project-desc">    
+                <h2 style="color:var(--color-purple)">ChatApp</h2>
+                <a target="_blank" href="https://github.com/jaylyn-green/ChatApp"><button>Github</button></a>
+                <p><span style="color:var(--color-green)">Created</span> a real-time messaging application with robust communication features...</p>
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Socket.IO</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                </ul>
+            </div>
+`
         },
         skills: {
             'Java': `
@@ -275,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectItems = document.querySelectorAll('.proj-container li');
     projectItems.forEach(item => {
         item.addEventListener('click', function () {
-            const projectName = this.textContent;
+            const projectName = this.textContent.trim();
             if (content.projects[projectName]) {
                 displayContainer.innerHTML = content.projects[projectName];
             }
