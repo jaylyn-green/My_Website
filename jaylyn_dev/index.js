@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         experience: {
             "Teacher's assistant": `
             <div class="exp-description">    
-                <h3>Teacher's <span style=color:var(--color-purple)>Assitant</span></h3>
+                <h3>Teacher's <span style=color:var(--color-purple)>Assitant</span> <span style="color:var(--color-orange)">@Georgia Southwestern Univeristy</span></h3>
                 <p>August <span style=color:var(--color-green)>2023</span> - December 2023</p>
                 <ul>
                     <li>Teaching <span style=color:var(--color-blue)>assitant</span> for entry level programming classes</li>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             "Freelance Data Annotater": `
             <div class = "exp-description">    
-                <h3>Freelance Data <span style=color:var(--color-green)>Annotater</span></h3>
+                <h3>Freelance Data <span style=color:var(--color-green)>Annotater</span> <span style="color:var(--color-orange)">@DataAnnotation.tech</span></h3>
                 <p>May <span style=color:var(--color-orange)>2024</span> - <span style=color:var(--color-blue)>Present</span></p>
                 <ul>
                 <li>Labeled and <span style=color:var(--color-purple)>annotated</span> large datasets for machine learning and AI training.</li>
@@ -35,48 +35,60 @@ document.addEventListener('DOMContentLoaded', () => {
             'FitnessTracker': `
             <div class="project-desc">    
                     <h2 style="color:var(--color-green)">FitnessTracker</h2>
-                    <a target="_blank" href="https://github.com/jaylyn-green/fitness_tracker_fullstack"><button type="button">Github</button></a>
+                    <button type="button" onclick="window.open('https://github.com/jaylyn-green/fitness_tracker_fullstack', '_blank')">Github</button>
                 <p>
-                    <span style = "color:var(--color-orange)">Developed</span> a full-stack fitness tracking application for runners using the <span style="color: var(--color-blue);">MERN</span> stack (MongoDB, Express, ReactJS, Node.js). Designed a secure back-end API with Node.js and <span style="colorLvar(--color-blue)">Express</span> to manage running data, integrating it with a MongoDB <span style="color: var(--color-orange);">database</span>. Built an <span style="color:var(--color-blue)">interactive</span> front-end user interface with ReactJS, enabling users to log and <span style="color: var(--color-green);">track</span> runs effortlessly. Implemented key features such as adding, managing, and analyzing metrics like <span style="color: var(--color-purple);">distance</span>, time, and pace. Ensured seamless integration between front-end and back-end components to deliver a smooth and intuitive <span style="color: var(--color-blue);">experience</span>.
-                <p>
-
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>React</li>
-                    <li>Node.js</li>
+                    <span style = "color:var(--color-orange)">Developed</span> a full-stack fitness tracking application for runners using the <span style="color: var(--color-blue);">MERN</span> stack (MongoDB, Express, ReactJS, Node.js). Designed a secure back-end API with Node.js and <span style="colorLvar(--color-blue)">Express</span> to manage running data, integrating it with a MongoDB <span style="color: var(--color-orange);">database</span>. Built an <span style="color:var(--color-blue)">interactive</span> front-end user interface with ReactJS, enabling users to log and <span style="color: var(--color-green);">track</span> runs effortlessly. Implemented key features such as adding, <span style ="color: var(--color-orange)">managing</span>, and analyzing metrics like <span style="color: var(--color-purple);">distance</span>, time, and pace. <span style=color:var(--color-green)>Ensured</span> seamless integration between front-end and backend components to deliver a smooth and intuitive <span style="color: var(--color-blue);">experience</span>.
+                <p>      
+                    <div class = img-container>
+                        <img src="./pics/run_app1.png">                  
+                    </div>
+                    <div class = img-container>
+                        <img src="./pics/run_app2.png">    
+                    </div>
+                    <div class = img-container>
+                        <img src="./pics/run_app3.png">                    
+                    </div>
+                <h3>Technologies used:</h3>
+                <ul class="tech-stack">
+                    <li><img src="./svgs/react.svg" alt="React" class="svg">React</li>
+                    <li><img src="./svgs/nodejs.svg" alt="Node.js" class="svg">Node.JS</li>
+                    <li><img src="./svgs/express.svg" alt="Express.js" class="svg">Express</li>
+                    <li><img src="./svgs/db.svg" alt="Database" class="svg">MongoDB</li>
                 </ul>
             </div>
             `,
             'CityUpdate': `
             <div class="project-desc">    
             <h2 style="color:var(--color-blue)">CityUpdate</h2>
-             <a target="_blank" href="https://github.com/jaylyn-green/CityUpdate"><button type="button">Github</button></a>
+             <button type="button" onclick="window.open('https://github.com/jaylyn-green/CityUpdate', '_blank')">Github</button>
                 <p>
                     The <span style="color: var(--color-blue);">City Infrastructure Tracker</span> is a web application that allows users to manage and visualize city projects, such as <span style="color: var(--color-orange);">roadwork</span> or <span style="color: var(--color-green);">construction</span>, on an interactive <span style="color: var(--color-purple);">Google Map</span>. Users can register projects by submitting details like <span style="color: var(--color-purple);">type</span>, location, status, and impact through a form, with the data stored in a backend <span style="color: var(--color-orange);">database</span>. The map dynamically displays <span style="color: var(--color-blue);">markers</span> for each project, which users can click to view detailed information or delete to remove the project from both the map and the backend. The application ensures <span style="color: var(--color-green);">real-time updates</span> to markers while maintaining a seamless map interaction experience. Built with <span style="color: var(--color-purple);">React</span>, <span style="color: var(--color-blue);">Google Maps API</span>, and a RESTful backend, it provides an efficient way to track and manage infrastructure projects.
                 </p>
 
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
+                <div class=img-container>
+                    <img src="./pics/city_update.png">
+                </div>
+                <h3>Technologies used:</h3>
+                <ul class="tech-stack">
+                    <li><img src="./svgs/react.svg" alt="React" class="svg">React</li>
+                    <li><img src="./svgs/nodejs.svg" alt="Node.js" class="svg">Node.JS</li>
+                    <li><img src="./svgs/express.svg" alt="Express.js" class="svg">Express</li>
+                    <li><img src="./svgs/db.svg" alt="Database" class="svg">MongoDB</li>
                 </ul>
             </div>
 `,
             'ChatApp': `
             <div class="project-desc">    
                 <h2 style="color:var(--color-purple)">ChatApp</h2>
-                <a target="_blank" href="https://github.com/jaylyn-green/ChatApp"><button>Github</button></a>
-                <p><span style="color:var(--color-green)">Created</span> a real-time messaging application with robust communication features...</p>
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Socket.IO</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
+             <button type="button" onclick="window.open('https://github.com/jaylyn-green/ChatApp', '_blank')">Github</button>
+                <p><span style="color:var(--color-green)">Created</span> a real-time messaging application with robust communication features. Work in progress...</p>
+                <h3>Technologies used:</h3>
+                <ul class="tech-stack">
+                    <li><img src="./svgs/react.svg" alt="React" class="svg">React</li>
+                    <li><img src="./svgs/nodejs.svg" alt="Node.js" class="svg">Node.JS</li>
+                    <li><img src="./svgs/express.svg" alt="Express.js" class="svg">Express</li>
+                    <li><img src="./svgs/db.svg" alt="Database" class="svg">MongoDB</li>
+                    <li><img src="./svgs/socket.svg" alt="Socket.io" class="svg">Socket.io</li>
                 </ul>
             </div>
 `
