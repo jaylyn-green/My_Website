@@ -357,6 +357,16 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSelectedSection(document.querySelector('.skills-container'));
         });
     });
+    const listItems= document.querySelectorAll('li');
+    listItems.forEach(li => {
+        li.addEventListener('click', ()=>{
+            listItems.forEach((item)=>{
+                item.style.backgroundColor=''
+            })
+            li.style.backgroundColor='var(--selected)';
+        })
+    })
+        
 
     function updateSelectedSection(selectedElement) {
         document.querySelectorAll('.main-container > div > div').forEach(div => {
